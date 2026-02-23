@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Badili_JR Eco Tours & Safaris | Demo Tourism Website</title>
+
+<!-- Bootstrap CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css">
+
+<style>
+/* GENERAL */
+html, body {
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+    padding-top: 70px;
+}
+
+.section-padding {
+    padding: 80px 0;
+}
+
+/* NAVBAR */
+.navbar-custom {
+    background-color: #0A1F44;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* HERO */
+.hero {
+    min-height: 100vh;
+    height: 100dvh;
+    background: linear-gradient(to right, #0A1F44, #11254F);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+/* BUTTONS */
+.btn-accent {
+    background-color: #FF6B35;
+    color: white;
+    border: none;
+    transition: all 0.3s ease;
+}
+
+.btn-accent:hover {
+    background-color: #e85b2d;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 15px rgba(0,0,0,0.2);
+}
+
+/* CARDS */
+.card {
+    border: none;
+    transition: all 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+}
+
+/* FOOTER */
+.footer {
+    background-color: #0A1F44;
+    color: white;
+    padding: 30px 0;
+}
+
+/* WHATSAPP BUTTON */
+.whatsapp-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 9999;
+    width: 60px;
+    height: 60px;
+    background-color: #FF6B35;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+
+.whatsapp-btn i {
+    font-size: 28px;
+    color: white;
+}
+
+.whatsapp-btn:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 25px rgba(255,107,53,0.6);
+}
+
+@media (max-width:768px){
+    .section-padding {
+        padding:60px 0;
+    }
+}
+</style>
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="#">Badili_JR Eco Tours & Safaris</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#packages">Tours</a></li>
+        <li class="nav-item"><a class="nav-link" href="#gallery">Gallery</a></li>
+        <li class="nav-item"><a class="nav-link" href="#booking">Booking</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section id="home" class="hero">
+  <div class="container">
+    <h1 class="display-4 fw-bold">Discover Kenya’s Coast & Safari Adventures</h1>
+    <p class="lead mt-3">Book unforgettable experiences with instant WhatsApp confirmation.</p>
+    <div class="mt-4">
+      <a href="https://wa.me/2547XXXXXXXX?text=Hi%20I%20want%20to%20book%20a%20tour" class="btn btn-accent px-4 py-2 me-3">Book on WhatsApp</a>
+      <a href="#packages" class="btn btn-outline-light px-4 py-2">View Tours</a>
+    </div>
+  </div>
+</section>
+
+<!-- TOUR PACKAGES -->
+<section id="packages" class="section-padding text-center">
+  <div class="container">
+    <h2 class="fw-bold mb-5">Our Tour Packages</h2>
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="card p-4 bg-light">
+          <h5 class="fw-bold">Diani Snorkeling Experience</h5>
+          <p>3 Hours • Boat ride • Snorkeling gear included</p>
+          <p class="fw-bold">KES 4,500 / person</p>
+          <a href="https://wa.me/254789801621?text=I%20want%20to%20book%20Diani%20Snorkeling" class="btn btn-accent mt-3">Book Now</a>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card p-4 bg-light">
+          <h5 class="fw-bold">Watamu Beach Safari</h5>
+          <p>Half-day tour • Guided snorkeling • Beach lunch included</p>
+          <p class="fw-bold">KES 6,000 / person</p>
+          <a href="https://wa.me/254789801621?text=I%20want%20to%20book%20Watamu%20Beach%20Safari" class="btn btn-accent mt-3">Book Now</a>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card p-4 bg-light">
+          <h5 class="fw-bold">Maasai Mara 3-Day Safari</h5>
+          <p>Transport, hotel, game drives included</p>
+          <p class="fw-bold">KES 25,000 / person</p>
+          <a href="https://wa.me/254789801621?text=I%20want%20to%20book%20Maasai%20Mara%203-Day%20Safari" class="btn btn-accent mt-3">Book Now</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- GALLERY -->
+<section id="gallery" class="section-padding text-center">
+  <div class="container">
+    <h2 class="fw-bold mb-5">Gallery</h2>
+    <div class="row g-3">
+      <div class="col-md-4"><img src="https://source.unsplash.com/400x300/?beach,kenya" class="img-fluid rounded" alt="Beach Tour"></div>
+      <div class="col-md-4"><img src="https://source.unsplash.com/400x300/?safari,kenya" class="img-fluid rounded" alt="Safari Tour"></div>
+      <div class="col-md-4"><img src="https://source.unsplash.com/400x300/?boat,kenya" class="img-fluid rounded" alt="Boat Tour"></div>
+    </div>
+  </div>
+</section>
+
+<!-- BOOKING FORM -->
+<section id="booking" class="section-padding bg-light">
+  <div class="container">
+    <h2 class="fw-bold text-center mb-4">Book Your Tour</h2>
+    <p class="text-center mb-4">Fill in the form below and we will confirm via WhatsApp within minutes.</p>
+    <div class="row justify-content-center">
+      <div class="col-md-6">
+        <form>
+          <div class="mb-3"><input type="text" class="form-control" placeholder="Full Name" required></div>
+          <div class="mb-3"><input type="tel" class="form-control" placeholder="Phone Number" required></div>
+          <div class="mb-3"><input type="email" class="form-control" placeholder="Email"></div>
+          <div class="mb-3">
+            <select class="form-select" required>
+              <option selected disabled>Select Tour</option>
+              <option>Diani Snorkeling Experience</option>
+              <option>Watamu Beach Safari</option>
+              <option>Maasai Mara 3-Day Safari</option>
+            </select>
+          </div>
+          <div class="mb-3"><input type="date" class="form-control" required></div>
+          <div class="mb-3"><input type="number" class="form-control" placeholder="Number of People" required></div>
+          <div class="text-center">
+            <a href="https://wa.me/254789801621?text=I%20want%20to%20book%20a%20tour" class="btn btn-accent px-4 py-2">Submit Booking</a>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="section-padding text-center">
+  <div class="container">
+    <h2 class="fw-bold mb-5">Testimonials</h2>
+    <div class="row g-4 justify-content-center">
+      <div class="col-md-6">
+        <div class="card p-4 shadow-sm">
+          <p>“Our bookings increased after launching this website.” – Coastal Tours Diani</p>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="card p-4 shadow-sm">
+          <p>“Customers can now reserve directly online.” – Mara Adventures</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- GOOGLE MAPS -->
+<section class="section-padding text-center">
+  <div class="container">
+    <h2 class="fw-bold mb-4">Our Locations</h2>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.6110918118335!2d39.606755!3d-3.406932!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1843d7e4e60b77af%3A0x4fbd3f5b9a1b6f0!2sDiani%20Beach%2C%20Kenya!5e0!3m2!1sen!2sus!4v1698208748395!5m2!1sen!2sus" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="section-padding bg-light text-center">
+  <div class="container">
+    <h2 class="fw-bold mb-4">Ready to Get More Bookings?</h2>
+    <p>Let’s build a professional tourism website that increases your reservations.</p>
+    <a href="https://wa.me/254789801621?text=Hi%20I%20want%20to%20start%20my%20tour%20website" class="btn btn-accent px-4 py-2 mt-3">
+      <i class="bi bi-whatsapp"></i> Chat on WhatsApp
+    </a>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer text-center">
+  <div class="container">
+    <p class="mb-0">© 2026 Badili_JR Eco Tours & Safaris. All Rights Reserved.</p>
+  </div>
+</footer>
+
+<!-- FLOATING WHATSAPP -->
+<a href="https://wa.me/254789801621" target="_blank" class="whatsapp-btn">
+  <i class="bi bi-whatsapp"></i>
+</a>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
